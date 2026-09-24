@@ -1,4 +1,4 @@
-package Ejercicio1;
+package PRO01;
 public class PRO01_Ejerc1 {
     public enum Choice {M, F};
     public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class PRO01_Ejerc1 {
         final int MAX_NUMBER = 5000; // final int crea un valor entero inmutable
         boolean driversLicense = true; // boolean nos ofrece la simplitud de dar resultado verdadero (1) o falso (0)
         String fullName = "Deniel Khamidullin Barabanshchikov"; // String nos permite guardar una linea de characteres
-        Choice sex = Choice.M; // he usado un enum para guardar los únicos 2 valores que pueden ser eligidos
+        Choice sex = Choice.M; // he usado un enum para guardar los 2 valores que pueden ser eligidos
         float earthToJupiter = 5.2f; // he usado float para demostrar un número decimal
 
         System.out.println("Unmodifiable Max Value: " + MAX_NUMBER);
