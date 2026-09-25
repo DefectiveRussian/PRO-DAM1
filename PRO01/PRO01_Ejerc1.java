@@ -1,4 +1,3 @@
-package PRO01;
 public class PRO01_Ejerc1 {
     public enum Choice {M, F};
     public static void main(String[] args) {
