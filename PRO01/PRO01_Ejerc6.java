@@ -16,5 +16,6 @@ public class PRO01_Ejerc6 {
             System.out.printf("perro1 is: %s. perro2 is: %s.\n", perro1, perro2);
         else
             System.out.println("Incorrect value");
+        sc.close();
     }
 }
