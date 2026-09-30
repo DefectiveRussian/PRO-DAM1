@@ -1,1 +1,1 @@
-Collection of my Java projects from college
+Repo for Java
