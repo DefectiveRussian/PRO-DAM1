@@ -8,9 +8,9 @@ public class PRO01_Ejerc4 { //give monthly salary, say if it matches minimum int
         System.out.println("Introduce your monthly wage in numbers");
         takenWage = sc.nextInt();
         if (takenWage == minWage || takenWage > minWage)
-            System.out.printf("Your monthly wage of %d euro is compliant with the minumum interpersonal wage of Spain (%d euro per month)\n", takenWage, minWage);
+            System.out.printf("Your monthly wage of %d euro is compliant with the minimum interpersonal wage of Spain (%d euro per month)\n", takenWage, minWage);
         else
-            System.out.printf("Your monthly wage of %d euro is NOT compliant with the minumum interpersonal wage of Spain (%d euro per month)\n", takenWage, minWage);
+            System.out.printf("Your monthly wage of %d euro is NOT compliant with the minimum interpersonal wage of Spain (%d euro per month)\n", takenWage, minWage);
         sc.close();
     }
 }
