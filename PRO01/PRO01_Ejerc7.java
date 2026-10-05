@@ -12,7 +12,7 @@ public class PRO01_Ejerc7 {
 		a = sc.nextDouble();
 		System.out.printf("Please introduce the numerical value of b\n");
 		b = sc.nextDouble();
-		System.out.printf("The equasion is %fx + %f = 0", a, b);
+		System.out.printf("The equasion is %fx + %f = 0\n", a, b);
 
 		b = -b / a;
 		a = a / a;
