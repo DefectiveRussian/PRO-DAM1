@@ -19,17 +19,19 @@ public class PRO01_Ejerc5 {
 		}
 
 		//how to calculate without %
+		/*
 		convertToDays = takenSeconds / aDay;
 		convertToHours = (takenSeconds - convertToDays * aDay) / anHour;
 		convertToMinutes = (takenSeconds - convertToDays * aDay - convertToHours * anHour) / aMinute;
 		convertToSeconds = takenSeconds - convertToDays * aDay - convertToHours * anHour - convertToMinutes * aMinute;
+		*/
 
 		//how to calculate with %
-		/*convertToDays = takenSeconds / aDay;
+		
+		convertToDays = takenSeconds / aDay;
 		convertToHours = (takenSeconds % aDay) / anHour;
-		convertToMinutes = */
-
-		//System.out.println("Given seconds: " + takenSeconds + "\nDays: " + convertToDays + " Hours: " + convertToHours + " Minutes: " + convertToMinutes);
+		convertToMinutes = ((takenSeconds % aDay) % anHour) / aMinute;
+		convertToSeconds = ((takenSeconds % aDay) % anHour) % aMinute;
 		
 		System.out.println("Given seconds: " + takenSeconds + "\nDays: " + convertToDays + " Hours: " + convertToHours + " Minutes: " + convertToMinutes + " Seconds: " + convertToSeconds);
 
