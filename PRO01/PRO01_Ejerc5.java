@@ -15,7 +15,7 @@ public class PRO01_Ejerc5 {
 		takenSeconds = sc.nextInt();
 		if (takenSeconds < 0) {
 			System.out.println("Negative values are not allowed");
-			System.exit(0);
+			System.exit(1);
 		}
 
 		//how to calculate without %
