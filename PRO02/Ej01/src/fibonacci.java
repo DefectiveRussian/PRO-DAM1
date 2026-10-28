@@ -30,5 +30,15 @@ public class fibonacci {
 			System.out.printf(", %d", (x + y));
 		System.out.println(".");
 		sc.close();
+		return;
 	}
 }
+/*
+		Alternative loop
+
+		for (i = 4; i <= n; i += 2) {
+			x = x + y;
+			y = x + y;
+			System.out.printf(", %d, %d", x, y);
+		}
+*/
