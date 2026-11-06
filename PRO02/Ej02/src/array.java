@@ -6,7 +6,7 @@ public class array {
 		for (int i = 0; i < a; i++) {
 			for (int j = 0; j < b; j++) {
 				// coordenadas de los bordes | -1 porque las coordenadas empiezan desde 0
-				if (j == 0 || j == (b - 1) || i == 0 || i == (a - 1))
+				if (j == 0 || j == (b - 1) || i == 0 || i == (a - 1)) // if (j == i || j + i == 4) -> para hacer una cruz
 					matriz[i][j] = 1;
 				else
 					matriz[i][j] = 0;
@@ -58,30 +58,4 @@ public class array {
  * {1, 2, 3},
  * {4, 5, 6},
  * {7, 8, 9}
- * };
- * 
- * int crearMatriz[][] = new int[row][column];
- * while (i < row) {
- * while (j < column) {
- * crearMatriz[i][j] = (i + 1) * 10 * (j + 1);
- * j++;
- * }
- * i++;
- * }
- * 
- * int crearMatriz[][] = new int[row][column];
- * for (i = 0; i < row; i++) {
- * for (j = 0; j < column; j++) {
- * crearMatriz[i][j] = (i + j);
- * }
- * }
- * 
- * int crearMatriz[][] = new int[row][column];
- * while (i < row) {
- * while (j < column) {
- * matriz[i][j] = 1;
- * j++;
- * }
- * i++;
- * }
- */
+ * };*/
