@@ -30,14 +30,16 @@ public class array {
 
 		System.out.println("Introduzca el número de filas (1 - 10)");
 		int row = sc.nextInt();
-		if (row > MAX_SIZE || row < 1) {
-			System.out.printf("Número no puede ser mayor a %d o menor a 1.\nVuelva a intentar\n", MAX_SIZE);
+		// error handling
+		while (row > MAX_SIZE || row < 1) {
+			System.out.printf("Número de filas no puede ser menor a 1 o mayor a %d.\nVuelva a intentar\n", MAX_SIZE);
 			row = sc.nextInt();
 		}
-		System.out.println("Introduzca el número de columanas (1 - 10)");
+		System.out.println("Introduzca el número de columnas (1 - 10)");
 		int column = sc.nextInt();
-		if (column > MAX_SIZE || column < 1) {
-			System.out.printf("Número no puede ser mayor a %d o menor a 1.\nVuelva a intentar\n", MAX_SIZE);
+		// also error handling
+		while (column > MAX_SIZE || column < 1) {
+			System.out.printf("Número de columnas no puede ser menor a 1 o mayor a %d .\nVuelva a intentar\n", MAX_SIZE);
 			column = sc.nextInt();
 		}
 
