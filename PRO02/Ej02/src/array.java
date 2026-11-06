@@ -5,6 +5,7 @@ public class array {
 		int[][] matriz = new int[a][b];
 		for (int i = 0; i < a; i++) {
 			for (int j = 0; j < b; j++) {
+				// coordenadas de los bordes | -1 porque las coordenadas empiezan desde 0
 				if (j == 0 || j == (b - 1) || i == 0 || i == (a - 1))
 					matriz[i][j] = 1;
 				else
@@ -32,14 +33,14 @@ public class array {
 		int row = sc.nextInt();
 		// error handling
 		while (row > MAX_SIZE || row < 1) {
-			System.out.printf("Número de filas no puede ser menor a 1 o mayor a %d.\nVuelva a intentar\n", MAX_SIZE);
+			System.out.printf("Número de filas no puede ser menor que 1 o mayor que %d.\nVuelva a intentar\n", MAX_SIZE);
 			row = sc.nextInt();
 		}
 		System.out.println("Introduzca el número de columnas (1 - 10)");
 		int column = sc.nextInt();
 		// also error handling
 		while (column > MAX_SIZE || column < 1) {
-			System.out.printf("Número de columnas no puede ser menor a 1 o mayor a %d .\nVuelva a intentar\n", MAX_SIZE);
+			System.out.printf("Número de columnas no puede ser menor que 1 o mayor que %d .\nVuelva a intentar\n", MAX_SIZE);
 			column = sc.nextInt();
 		}
 
