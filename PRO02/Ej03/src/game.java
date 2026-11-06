@@ -33,9 +33,9 @@ public class game {
 	}
 
 	public static void configurar(Scanner sc) {
-		System.out.println("Introduce numIntentos");
+		System.out.println("Introduce el número máximo de intentos");
 		numIntentos = sc.nextInt();
-		System.out.println("Introduce numMax");
+		System.out.println("Introduce número máximo para adivinar");
 		numMax = sc.nextInt();
 
 		return ;
