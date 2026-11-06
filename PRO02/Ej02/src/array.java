@@ -51,10 +51,7 @@ public class array {
 	}
 }
 
-/*
- * WHEN 1: (j == 0) (j == column) (i == 0) (i == row)
- * 
- * int[][] myArrayList = {
+/* int[][] myArrayList = {
  * {1, 2, 3},
  * {4, 5, 6},
  * {7, 8, 9}
