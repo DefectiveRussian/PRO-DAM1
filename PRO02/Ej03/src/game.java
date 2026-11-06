@@ -16,7 +16,7 @@ public class game {
 		int numOculto = (int) (Math.random()*numMax + 1);
 		int i = 1;
 
-		while (i < numIntentos) {
+		while (i <= numIntentos) {
 			System.out.println("Introduce un número entre 0 y " + numMax);
 			int numJugado = sc.nextInt();
 			if (numJugado != numOculto) {
@@ -29,6 +29,8 @@ public class game {
 				i = numIntentos;
 			}
 		}
+		if (i > numIntentos)
+			System.out.printf("------------------\n¡Te has quedado sin intentos!\n------------------\n\n");
 		return ;
 	}
 
@@ -44,6 +46,7 @@ public class game {
 		Scanner sc = new Scanner(System.in);
 		boolean loop = true;
 
+		// bucle infinito a proposito
 		do {
 			System.out.printf("--- Menú ---\n1. Jugar\n2. Configurar\n0. Salir\n");
 			int selector = sc.nextInt();
