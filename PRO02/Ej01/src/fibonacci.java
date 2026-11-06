@@ -4,22 +4,27 @@ public class fibonacci {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Introduzca cantidad de números de serie Fibonacci para mostrar.");
+		System.out.println("Introduce the amount of numbers of fibonacci sequence to display.");
 		int n = sc.nextInt();
-		// bucle infinito hasta que n sea un número válido
+		// bucle infinito hasta que n sea un número válido 
 		while (n <= 0) {
-			System.out.println("Número inválido, vuelva a intentar.");
+			System.out.println("Invalid number. Please try again.\n");
 			n = sc.nextInt();
 		}
-		// edge case de solo un número solicitado
+		// edge case de solo un número solicitado 
 		if (n == 1) {
 			System.out.println("0.");
 			System.exit(0);
 		}
-		// i = 4 para que el bucle while solo itere en caso de que haya más de 4 números que mostrar 
+		// todo número que sea más grande que f92 causa overflow 
+		while (n >= 94) {
+			System.out.printf("Error. Out of scope of long and will cause overflow. f93 > 9,223,372,036,854,775,807.\nPlease try again.\n");
+			n = sc.nextInt();
+		}
+		// i = 4 para que el bucle while solo itere en caso de que haya 4 o más números que mostrar 
 		int i = 4;
-		int x = 0;
-		int y = 1;
+		long x = 0;
+		long y = 1;
 
 		System.out.printf("%d, %d", x, y);
 		while (i <= n) {
