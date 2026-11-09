@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class array {
+public class Array {
 	public static int[][] crearMatriz(int a, int b) {
 		int[][] matriz = new int[a][b];
 		for (int i = 0; i < a; i++) {

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class game {
+public class Game {
 	public static int numIntentos = 3;
 	public static int numMax = 10;
 
