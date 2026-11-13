@@ -6,7 +6,7 @@ public class Array {
 		for (int i = 0; i < a; i++) {
 			for (int j = 0; j < b; j++) {
 				// coordenadas de los bordes | -1 porque las coordenadas empiezan desde 0
-				if (j == 0 || j == (b - 1) || i == 0 || i == (a - 1)) // if (j == i || j + i == 4) -> para hacer una cruz
+				if (j == 0 || j == (b - 1) || i == 0 || i == (a - 1))
 					matriz[i][j] = 1;
 				else
 					matriz[i][j] = 0;
